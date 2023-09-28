@@ -1,0 +1,136 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+:root {
+    --fonte-poema: 'Sriracha', cursive;
+    --fonte-titulo: 'Passion One', cursive;
+    --fonte-normal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: lightgray;
+}
+
+* {
+    margin: 0px ;
+    padding: 0px;
+}
+
+header {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 0px 0px 0px 0px;
+    font-family: var(--fonte-normal);
+    
+
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-family: var(--fonte-titulo);
+    font-size: 10vw;
+}
+
+header > h2 {
+    font-variant: small-caps;
+    font-size: 1.3em;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    padding-top: 0px;
+    font-family: var(--fonte-titulo);
+    font-size: 4vw;
+}
+
+header > p {
+    padding-bottom: 50px;
+    font-size: 2vw;
+}
+
+header > p a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2vw;
+}
+header > p a:hover{
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte-poema);
+    font-size: 3vw;
+}
+
+section > p {
+    padding-bottom: 1.5em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.destaque {
+ background-color: rgb(51, 51, 51);
+ color: white;
+ box-shadow: inset 6px 6px 12px 0px rgba(0, 0, 0, 0.452);
+}
+
+section.destaque > p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border: rgba(0, 0, 0, 0.5) solid 0.3vw;
+    text-shadow: 0.16vw 0.16vw 0px black;
+}
+
+section#dt1 {
+    background: url(../imagens/background001.jpg) 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right center;
+}
+
+section#dt1 > p{
+    background: rgba(0, 0, 0, 0.500);
+   }
+
+section#dt2 {
+    background: url(../imagens/background002.jpg) 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right center;
+}
+
+section#dt2 > p{
+    background: rgba(0, 0, 0, 0.65);
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    font-size: 2vw;
+    padding: 10px;
+    font-family: var(--fonte-normal);
+}
+
+footer > p a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    footer > p a:hover{
+        text-decoration: underline;
+    }
